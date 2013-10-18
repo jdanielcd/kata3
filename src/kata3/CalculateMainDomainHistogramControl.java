@@ -1,10 +1,10 @@
 package kata3;
 
-public class Control {
+public class CalculateMainDomainHistogramControl {
 
     private String filename;
 
-    public Control(String filename) {
+    public CalculateMainDomainHistogramControl(String filename) {
         this.filename = filename;
     }
     
