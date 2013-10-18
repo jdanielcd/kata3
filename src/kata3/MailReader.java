@@ -15,7 +15,8 @@ public class MailReader {
             while(true){
                 String mail = reader.readLine();
                 if (mail == null) break;
-                list.add(mail.split("@")[1].toLowerCase());
+                if(mail.contains("@"))
+                    list.add(mail.split("@")[1].toLowerCase());
             }
         } catch (FileNotFoundException ex) {
         } catch (IOException ex) {
